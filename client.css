@@ -1,0 +1,231 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-image: url("background_client.png");
+  background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Zapobiega przewijaniu tła wraz z treścią strony */
+
+    /* Dodaj blur za pomocą backdrop-filter */
+    backdrop-filter: blur(5px); /* Możesz dostosować wartość '5px' według swoich preferencji */
+  font-family: 'Fira Code', sans-serif;
+  color: white;
+  padding: 0px 50px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+.navigation {
+    top: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 30px 50px;
+  }
+  
+  .logo {
+    font-size: 21px;
+  }
+  
+  .menu {
+    display: -webkit-box;
+    display: flex;
+    font-size: 16px;
+    list-style: none;
+  }
+  .menu__item {
+    margin-left: 40px;
+  }
+
+.button {
+  margin-top: 10px;
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  font-family: 'Fira Code', sans-serif;
+  padding: 10px 19px;
+  font-weight: 600;
+  display: block;
+  width: -webkit-fill-available;
+}
+
+.info {
+  max-width: 700px;
+}
+.info__title {
+  font-size: 48px;
+}
+.info__paragraph {
+  font-size: 21px;
+}
+
+.filters {
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+  list-style: none;
+}
+.filters__item {
+  border: 1px solid white;
+}
+.filters__item:not(:last-child) {
+  border-right: none;
+}
+.filters__button {
+  font-size: 12px;
+  font-family: 'Fira Code', sans-serif;
+  background: transparent;
+  padding: 10px 30px;
+  border: none;
+  color: white;
+}
+.filters__button--active {
+  background: white;
+  color: #171717;
+}
+
+.container {
+  margin-top: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 100px 50px;
+}
+
+.item {
+  border: 2px solid white;
+  display: grid;
+  min-height: 400px;
+  grid-template-rows: 100px 1fr;
+}
+.item__header {
+  background: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  align-content: center;
+  padding: 20px 30px;
+}
+.item__content {
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+
+  overflow: hidden;
+  max-width: -webkit-fill-available;
+}
+.item__title {
+  margin: 0;
+  color: #171717;
+  font-size: 21px;
+}
+.item__paragraph, .item__button {
+  font-size: 14px;
+  overflow: hidden;
+  max-width: -webkit-fill-available;
+}
+
+.form-box {
+    width: 100%;
+  }
+
+  .form-box__title {
+    font-size: 21px;
+    margin: 0;
+  }
+  .form-box__info {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .form {
+    margin-top: 45px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: left;
+            justify-content: left;
+    -webkit-box-align: left;
+            align-items: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+.form__text-input,
+.form__text-list {
+    font-family: 'Fira Code', sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    margin: 15px 0;
+}
+
+.form__text-input {
+    color: white; /* Kolor dla .form__text-input */
+}
+
+.form__text-list {
+    color: orange; /* Dziedziczy kolor od .form__text-input */
+}
+
+  .form__checkbox-label {
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .form__button {
+    margin-top: 50px;
+    margin-bottom: 12px;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    padding: 10px 19px;
+    font-weight: 600;
+    display: block;
+  }
+  
+a,a:visited
+{color: white;}
+
+.buttons{
+  display: block;
+  width: 96%;
+}
+
+.item form{
+  display: contents;
+}
+
+footer {
+     text-align: center;
+     background-color: black;
+     color: white;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+}

@@ -1,0 +1,146 @@
+* {
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+ *, *::before, *::after {
+     box-sizing: border-box;
+}
+ body {
+	 background-color: black;
+     background-image: url("background_main.png");
+     z-index:-1;
+     font-family: 'Fira Code', sans-serif;
+     color: white;
+     padding: 100px 50px;
+     min-height: 100vh;
+     display: -webkit-box;
+     display: flex;
+     -webkit-box-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     align-items: center;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     overflow: hidden;
+}
+ .navigation {
+     position: fixed;
+     top: 0;
+     display: -webkit-box;
+     display: flex;
+     -webkit-box-align: center;
+     align-items: center;
+     -webkit-box-pack: justify;
+     justify-content: space-between;
+     width: 100%;
+     padding: 30px 50px;
+}
+ .logo {
+     font-size: 21px;
+}
+ .menu {
+     display: -webkit-box;
+     display: flex;
+     font-size: 16px;
+     list-style: none;
+}
+ .menu__item {
+     margin-left: 40px;
+}
+ .form-box {
+     padding: 20px 55px;
+     border: 2px solid white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     background-color: #171717b0;
+     margin: 10px;
+    /* Optional: Add margin for spacing between divs */
+}
+ .form-box__title {
+     font-size: 21px;
+     margin: 0;
+}
+ .form-box__info {
+     font-size: 14px;
+     font-weight: 300;
+}
+ .form {
+     margin-top: 5px;
+     display: -webkit-box;
+     display: flex;
+     -webkit-box-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     align-items: center;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     flex-direction: column;
+}
+ .form__text-input {
+     font-family: 'Fira Code', sans-serif;
+     font-size: 16px;
+     background-color: transparent;
+     color: white;
+     border: none;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+     width: 80%;
+     margin: 15px 0;
+}
+ .form__checkbox-label {
+     font-size: 10px;
+     font-weight: 300;
+}
+ .form__button {
+     margin-top: 30px;
+     margin-bottom: 12px;
+     background-color: white;
+     border: none;
+     font-size: 14px;
+     padding: 10px 19px;
+     font-weight: 600;
+     display: block;
+}
+ a,a:visited {
+    color: white;
+}
+ .error{
+     color: red;
+     font-size: 11px;
+}
+ .terms{
+     margin-top: 5px;
+     margin-bottom: 25px;
+}
+ footer {
+     text-align: center;
+     background-color: black;
+     color: white;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+}
+ .table-container {
+     max-height: 550px;
+    /* Ustaw maksymalną wysokość tabeli, aby była przewijana */
+     overflow-y: auto;
+    /* Ustaw przewijanie Y */
+}
+ table {
+     width: 100%;
+     border-collapse: collapse;
+}
+ table, th, td {
+     border: 1px solid black;
+}
+ th, td {
+     padding: 8px;
+     text-align: left;
+}
+ img {
+     max-width: 150px;
+     max-height: 200px;
+}
